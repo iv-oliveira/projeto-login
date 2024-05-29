@@ -5,3 +5,64 @@
     Verde: #49a09d
     Lilás: #5f2c82
 */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #5f2c82;
+
+    position: relative;
+}
+
+#login {
+    width: 45vw;
+    margin: auto;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#imagem {
+    background-image: url("../imagens/porta.jpg");
+}
+
+#formulario {
+    background-color: white;
+    border-radius: 0px 0px 10px 10px;
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#texto {
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+input {
+    display: block;
+    height: 30px;
+    width: 200px;
+    margin: 5px auto;
+}
+
+.campos {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.botoes {
+    border-radius: 5px; 
+}
+
+
+
