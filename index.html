@@ -5,26 +5,33 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Login</title>
         <link rel="stylesheet" href="estilos/style.css">
+        <link rel="stylesheet" href="estilos/mediaquery.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
     <body>
         <main>
             <section id="login">
                 <div id="imagem">
+                    <!-- Aqui fica o background-image -->
                 </div>
                 <div id="formulario">
                     <h1>Login</h1>
                     <p id="texto">
                         Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.
                     </p>
-                    <form>
-                        <p>
-                            <input type="email" name="email" id="iemail" required placeholder="fulano@fulano.com" class="campos">
-                        </p>
-                        <p>
-                            <input type="password" required minlength="6" placeholder="Sua senha" class="campos">
-                        </p>
-                        <p><input type="submit" value="Entrar" id="entrar"></p>
-                        <p><input type="submit" value="Esqueci a senha" id="esqueci"></p>
+                    <form method="post" autocomplete="off">
+                        <div class="campos">
+                            <span class="material-icons">person</span>
+                            <input type="email" name="email" id="iemail" required placeholder="fulano@fulano.com">
+                            <label for="iemail">Login</label>
+                        </div>
+                        <div class="campos">
+                            <span class="material-icons">vpn_key</span>
+                            <input type="password" name="senha" id="isenha" required minlength="6" placeholder="Sua senha">
+                            <label for="isenha">Senha</label>
+                        </div>
+                        <input type="submit" value="Entrar" id="entrar">
+                        <a href="esqueci.html">Esqueci a senha <span class="material-icons">mail</span></a>
                     </form>
                 </div>
             </section>

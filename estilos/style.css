@@ -24,10 +24,11 @@ body {
 #login {
     background-color: white;
     height: 500px;
-    width: 45vw;
+    width: 50vw;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
+    transition: width .5s, height .5s;
 
     position: absolute;
     top: 50%;
@@ -36,8 +37,9 @@ body {
 }
 
 #imagem {
-    background-image: url("../imagens/porta.jpg");
+    background-image: url("../imagens/metropole.jpg");
     background-size: cover;
+    background-position: center bottom;
     height: 30vh;
 }
 
@@ -55,23 +57,24 @@ h1 {
     font-size: 0.9em;
 }
 
-input {
+/* .campos {
     display: block;
     height: 35px;
-    width: 200px;
+    width: 210px;
     margin: 5px auto;
     border-radius: 5px;
 }
 
-.campos {
-    border: 1px solid black;
-}
-
 #entrar {
+    display: block;
+    margin: auto;
+    height: 35px;
+    width: 200px;
+    border-radius: 5px;
     background-color: #49a09d;
     color: white;
     border: none;
-}
+} */
 
 
 
